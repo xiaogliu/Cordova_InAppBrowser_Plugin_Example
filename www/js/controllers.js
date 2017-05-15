@@ -1,6 +1,16 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+
+  // InAppBrowser example begin
+  $scope.openInExternalBrowser = function()
+  {
+    // 在系统自带浏览器中打开链接
+    window.open('http://xiaogliu.github.io/','_system','location=yes');
+  };
+  // InAppBrowser example end
+
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
